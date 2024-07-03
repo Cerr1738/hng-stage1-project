@@ -1,0 +1,155 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #effbfe;
+}
+
+header {
+    background-color: #45a8c3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2.1rem;
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 90%;
+}
+
+.section1, .section2, .section3 {
+    margin: 30px 0;
+}
+
+.section1 {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.section1 img {
+    margin: 20px;
+}
+
+.div2, .div3 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.div1 h2 {
+    color: black;
+    margin-top: 30px;
+}
+
+.div1 p{
+    line-height: 0;
+}
+
+
+.div2 p, .div3 p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.div2 img, .div3 img{
+    margin: 50px;
+}
+
+.section2{
+    box-shadow:0 4px 15px rgba(1,1,1,0.1) ;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: -8px;
+}
+
+footer {
+    background-color: #45a8c3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    color: #125f74;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #45a8c3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .section1 {
+        flex-direction: column;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    header h2 {
+        font-size: 1.8rem;
+    }
+
+     .section2 img, .div3 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .div2, .div3 {
+        margin-top: 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 1.6rem;
+    }
+
+    main {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .section1 {
+        flex-direction: column;
+    }
+
+    .section1 img, .section2 img, .div3 img {
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
